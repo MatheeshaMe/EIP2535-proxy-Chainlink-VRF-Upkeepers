@@ -1,0 +1,6 @@
+import "./lottery/00_initial-setup"
+import "./lottery/01_mint-tokens"
+import "./lottery/02_buy-coins"
+import "./lottery/03_enter-lottery"
+import "./lottery/04_admin-lottery"
+import "./lottery/05_common-actions"

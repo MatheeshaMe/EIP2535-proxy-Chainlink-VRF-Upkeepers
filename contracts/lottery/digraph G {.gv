@@ -1,0 +1,170 @@
+digraph G {
+  graph [ ratio = "auto", page = "100", compound =true, bgcolor = "#2e3e56" ];
+  node [ style = "filled", fillcolor = "#edad56", color = "#edad56", penwidth =3 ];
+  edge [ color = "#fcfcfc", penwidth =2, fontname = "helvetica Neue Ultra Light" ];
+subgraph "clusterCoinCave__Lottery" {
+  graph [ label = "CoinCave__Lottery", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "CoinCave__Lottery.initializeLottery" [ label = "initializeLottery", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "CoinCave__Lottery.isLotteryOpen" [ label = "isLotteryOpen", color = "#1bc6a6", shape =doubleoctagon ];
+  "CoinCave__Lottery.notContract" [ label = "notContract", color = "#1bc6a6", shape =doubleoctagon ];
+  "CoinCave__Lottery._isContract" [ label = "_isContract" ];
+  "CoinCave__Lottery.getUser" [ label = "getUser", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.test" [ label = "test", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.buyCoins" [ label = "buyCoins", color = "brown", fillcolor = "#ffbdb9" ];
+  "CoinCave__Lottery.enter" [ label = "enter", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "CoinCave__Lottery.drawLottery" [ label = "drawLottery", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.setWinnersCount" [ label = "setWinnersCount", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.setWinnersRoots" [ label = "setWinnersRoots", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" [ label = "claimPreviousRoundRewards", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.flipLotteryState" [ label = "flipLotteryState", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "CoinCave__Lottery.isAWonTicket" [ label = "isAWonTicket" ];
+  "CoinCave__Lottery.getTicketWinningType" [ label = "getTicketWinningType", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.getUserTickets" [ label = "getUserTickets", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.getIndividualTicketDetail" [ label = "getIndividualTicketDetail" ];
+  "CoinCave__Lottery.getCurrentTicketId" [ label = "getCurrentTicketId", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.getCurrentRoundId" [ label = "getCurrentRoundId", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.totalPot" [ label = "totalPot", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.getLotteryStatus" [ label = "getLotteryStatus", color = "#FF9797", fillcolor = "#FF9797" ];
+  "CoinCave__Lottery.getWinnersCount" [ label = "getWinnersCount" ];
+  "CoinCave__Lottery.getWinnerRoots" [ label = "getWinnerRoots" ];
+  "CoinCave__Lottery.ts" [ label = "ts" ];
+  "CoinCave__Lottery.lots" [ label = "lots" ];
+  "CoinCave__Lottery.getUserDetails" [ label = "getUserDetails" ];
+  "CoinCave__Lottery.ds" [ label = "ds" ];
+  "CoinCave__Lottery.us" [ label = "us" ];
+  "CoinCave__Lottery.IERC20" [ label = "IERC20" ];
+  "CoinCave__Lottery.Ticket" [ label = "Ticket" ];
+  "CoinCave__Lottery.WinnersCount" [ label = "WinnersCount" ];
+  "CoinCave__Lottery.MerkleTrees" [ label = "MerkleTrees" ];
+}
+
+subgraph "clusterIERC20" {
+  graph [ label = "IERC20", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "IERC20.transferFrom" [ label = "transferFrom" ];
+}
+
+subgraph "clusterMerkleProof" {
+  graph [ label = "MerkleProof", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "MerkleProof.verify" [ label = "verify" ];
+}
+
+  "CoinCave__Lottery.initializeLottery";
+  "CoinCave__Lottery.ts";
+  "CoinCave__Lottery.lots";
+  "CoinCave__Lottery.isLotteryOpen";
+  "CoinCave__Lottery.notContract";
+  "CoinCave__Lottery._isContract";
+  "CoinCave__Lottery.getUser";
+  "CoinCave__Lottery.getUserDetails";
+  "CoinCave__Lottery.test";
+  "CoinCave__Lottery.ds";
+  "CoinCave__Lottery.buyCoins";
+  "CoinCave__Lottery.us";
+  "CoinCave__Lottery.IERC20";
+  "IERC20.transferFrom";
+  "CoinCave__Lottery.enter";
+  "CoinCave__Lottery.Ticket";
+  "CoinCave__Lottery.drawLottery";
+  "CoinCave__Lottery.setWinnersCount";
+  "CoinCave__Lottery.WinnersCount";
+  "CoinCave__Lottery.setWinnersRoots";
+  "CoinCave__Lottery.MerkleTrees";
+  "CoinCave__Lottery.claimPreviousRoundRewards";
+  "CoinCave__Lottery.getIndividualTicketDetail";
+  "CoinCave__Lottery.getWinnerRoots";
+  "CoinCave__Lottery.getWinnersCount";
+  "MerkleProof.verify";
+  "CoinCave__Lottery.isAWonTicket";
+  "CoinCave__Lottery.flipLotteryState";
+  "CoinCave__Lottery.getTicketWinningType";
+  "CoinCave__Lottery.getUserTickets";
+  "CoinCave__Lottery.getCurrentTicketId";
+  "CoinCave__Lottery.getCurrentRoundId";
+  "CoinCave__Lottery.totalPot";
+  "CoinCave__Lottery.getLotteryStatus";
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.ts" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.ts" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.ts" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.initializeLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.isLotteryOpen" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.notContract" -> "CoinCave__Lottery._isContract" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getUser" -> "CoinCave__Lottery.getUserDetails" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.test" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.test" -> "CoinCave__Lottery.ds" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.buyCoins" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.buyCoins" -> "CoinCave__Lottery.us" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.buyCoins" -> "CoinCave__Lottery.IERC20" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.buyCoins" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.enter" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.enter" -> "CoinCave__Lottery.us" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.enter" -> "CoinCave__Lottery.Ticket" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.drawLottery" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.setWinnersCount" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.setWinnersCount" -> "CoinCave__Lottery.WinnersCount" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.setWinnersRoots" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.setWinnersRoots" -> "CoinCave__Lottery.MerkleTrees" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.us" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.getIndividualTicketDetail" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.getWinnerRoots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.IERC20" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.getWinnersCount" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "MerkleProof.verify" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.isAWonTicket" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "MerkleProof.verify" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.isAWonTicket" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "MerkleProof.verify" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.isAWonTicket" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "MerkleProof.verify" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "CoinCave__Lottery.isAWonTicket" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "MerkleProof.verify" [ color = "white" ];
+  "CoinCave__Lottery.claimPreviousRoundRewards" -> "IERC20.transferFrom" [ color = "white" ];
+  "CoinCave__Lottery.flipLotteryState" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.isAWonTicket" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getTicketWinningType" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getUserTickets" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getIndividualTicketDetail" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getCurrentTicketId" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getCurrentRoundId" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.totalPot" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getLotteryStatus" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getWinnersCount" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+  "CoinCave__Lottery.getWinnerRoots" -> "CoinCave__Lottery.lots" [ color = "#1bc6a6" ];
+
+
+rankdir=LR
+node [shape=plaintext]
+subgraph cluster_01 { 
+label = "Legend";
+key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td align="right" port="i1">Internal Call</td></tr>
+  <tr><td align="right" port="i2">External Call</td></tr>
+  <tr><td align="right" port="i3">Defined Contract</td></tr>
+  <tr><td align="right" port="i4">Undefined Contract</td></tr>
+  </table>>]
+key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td port="i1">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i2">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i3" bgcolor="#445773">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i4">
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="7" color="#e8726d">
+      <tr>
+       <td></td>
+      </tr>
+     </table>
+  </td></tr>
+  </table>>]
+key:i1:e -> key2:i1:w [color="#1bc6a6"]
+key:i2:e -> key2:i2:w [color="white"]
+}
+}
